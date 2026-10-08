@@ -3,10 +3,10 @@
 </p>
 
 # Remedy
-Remedy is a mod for the PC versions of Gorilla Tag that allows you to play with your friends in old versions, play in public, etc
+Remedy is a modding tutorial for the PC versions of Gorilla Tag that helps you setup custom servers that you and your friends can play on together.
 
-This was made because I'm not fond of the current state of Gorilla Tag and old versions of this this game hold a special place in my heart
+This was made because I'm not fond of the current state of Gorilla Tag and I wanted to be able to play multiplayer on old versions.
 
-This game got me into coding and eventually lead me full circle into coding mods FOR it
+This game got me into coding and eventually lead me full circle into coding mods for it.
 
 Hope you enjoy
