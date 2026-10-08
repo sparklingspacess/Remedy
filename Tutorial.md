@@ -38,6 +38,12 @@ Replace the function `RequestPhotonToken` with:
 private void RequestPhotonToken(LoginResult obj) { }
 ```
 
+[!!!] *For modern versions change it to*:
+
+```csharp
+private void RequestPhotonToken(string playFabId, string sessionTicket)
+```
+
 <br>
 <br>
 
@@ -68,6 +74,24 @@ private IEnumerator WaitForControllerAndConnect()
     PhotonNetwork.AuthValues = new AuthenticationValues();
     PhotonNetwork.AuthValues.UserId = Guid.NewGuid().ToString();
     PhotonNetworkController.instance.InitiateConnection();
+}
+```
+
+[!!!] *For modern versions change it to*:
+
+```csharp
+private IEnumerator WaitForControllerAndConnect()
+{
+    while (PhotonNetworkController.Instance == null)
+    {
+        yield return null;
+    }
+    AppSettings appSettings = PhotonNetwork.PhotonServerSettings.AppSettings;
+    appSettings.AppIdRealtime = "APP_ID_HERE";
+    appSettings.AppIdVoice = "VOICE_ID_HERE";
+    PhotonNetwork.AuthValues = new AuthenticationValues();
+    PhotonNetwork.AuthValues.UserId = Guid.NewGuid().ToString();
+    PhotonNetworkController.Instance.InitiateConnection();
 }
 ```
 
