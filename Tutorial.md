@@ -3,7 +3,7 @@
 
 Navigate to ```[Install Directory]\Gorilla Tag_Data\Managed``` and open `Assembly-CSharp.dll` in *dnSpy*
 
-Within *dnSpy* open `PlayfabAuthenticator.cs`
+Within *dnSpy* open `PlayFabAuthenticator.cs`, right click on the *code view* and press `Edit Class (C#)...`
 
 <br>
 
@@ -60,6 +60,8 @@ public void Awake()
 <br>
 
 Replace the function `AuthenticateWithPhoton` with:
+
+**If you experience an error when trying to Compile the edited class, change** `IEnumerator` **to** `System.Collections.IEnumerator`
 
 ```csharp
 private IEnumerator WaitForControllerAndConnect()
