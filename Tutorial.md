@@ -41,7 +41,7 @@ private void RequestPhotonToken(LoginResult obj) { }
 [!!!] *For modern versions change it to*:
 
 ```csharp
-private void RequestPhotonToken(string playFabId, string sessionTicket)
+private void RequestPhotonToken(string playFabId, string sessionTicket) { }
 ```
 
 <br>
